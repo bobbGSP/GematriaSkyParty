@@ -64,6 +64,38 @@ class cipher {
 				this.vArr2 = [1,2,3,4,5,6,8,9,10,10,12,15,18,20,24,30,36,40,45,60,72,72,90,120,180,360]
 				}
 				break;
+			case "Illuminati":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [109,108,107,106,105,104,103,102,101,100,99,98,97,110,111,112,113,114,115,116,117,118,119,120,121,122]
+				this.cArr2 = [77,76,75,74,73,72,71,70,69,68,67,66,65,78,79,80,81,82,83,84,85,86,87,88,89,90]
+				this.vArr = [1,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,20,21,22,23,24]
+				this.vArr2 = [1,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,20,21,22,23,24]
+				}
+				break;
+			case "IlluminatiRev":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [122,121,120,119,118,117,116,115,114,113,112,111,110,97,98,99,100,101,102,103,104,105,106,107,108,109]
+				this.cArr2 = [90,89,88,87,86,85,84,83,82,81,80,79,78,65,66,67,68,69,70,71,72,73,74,75,76,77]
+				this.vArr = [1,2,3,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22,23,24]
+				this.vArr2 = [1,2,3,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22,23,24]
+				}
+				break;
+			case "IlluminatiAlt":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [97,98,99,100,101,102,103,104,105,106,107,108,109,122,121,120,119,118,117,116,115,114,113,112,111,110]
+				this.cArr2 = [65,66,67,68,69,70,71,72,73,74,75,76,77,90,89,88,87,86,85,84,83,82,81,80,79,78]
+				this.vArr = [1,2,3,4,5,6,7,8,9,9,10,11,12,13,14,15,16,17,17,18,19,20,21,22,23,24]
+				this.vArr = [1,2,3,4,5,6,7,8,9,9,10,11,12,13,14,15,16,17,17,18,19,20,21,22,23,24]
+				}
+				break;
+			case "IlluminatiAltRev":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [110,111,112,113,114,115,116,117,118,119,120,121,122,109,108,107,106,105,104,103,102,101,100,99,98,97]
+				this.cArr2 = [78,79,80,81,82,83,84,85,86,87,88,89,90,77,76,75,74,73,72,71,70,69,68,67,66,65]
+				this.vArr = [1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,16,17,18,19,20,21,22,23,24]
+				this.vArr = [1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,16,17,18,19,20,21,22,23,24]
+				}
+				break;
 			case "Agrippa":
 				this.cArr = [97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 120, 121, 122, 106, 118, 10680, 119]
 				this.cArr2 = [65, 66, 67, 68, 69, 70, 71, 72, 73, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 88, 89, 90, 74, 86, 10680, 87]
@@ -308,7 +340,7 @@ class cipher {
 				this.vArr2 = [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
 				break;
                 
-			case "Ordinal Starting at 5":
+			case "Angelic Gematria":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
 					this.cArr2[y] = (y + 65)
@@ -533,14 +565,14 @@ class cipher {
 		if (impMods.indexOf("SumerianNum") > -1) {this.Make_Sumerian()}
 		if (impMods.indexOf("Tesla") > -1) {this.Make_Tesla()}
 		if (impMods.indexOf("KeyNum") > -1) {this.Make_KeyAlt()}
+		if (impMods.indexOf("BaconExtended") > -1) {this.Make_BaconExtended()}
+		if (impMods.indexOf("BaconRevExt") > -1) {this.Make_BaconRevExt()}
 		if (impMods.indexOf("BaconSimple") > -1) {this.Make_BaconSimple()}
 		if (impMods.indexOf("BaconReverse") > -1) {this.Make_BaconReverse()}
 		if (impMods.indexOf("BaconShort") > -1) {this.Make_BaconShort()}
 		if (impMods.indexOf("BaconShortRev") > -1) {this.Make_BaconShortRev()}
 		if (impMods.indexOf("BaconKaye") > -1) {this.Make_BaconKaye()}
 		if (impMods.indexOf("ModernKaye") > -1) {this.Make_ModernKaye()}
-		if (impMods.indexOf("IlluminatiNovice") > -1) {this.Make_IlluminatiNovice()}
-		if (impMods.indexOf("IlluminatiReverse") > -1) {this.Make_IlluminatiReverse()}
 		if (impMods.indexOf("BeatusOrdinal") > -1) {this.Make_BeatusOrdinal()}
 		if (impMods.indexOf("BeatusReduction") > -1) {this.Make_BeatusReduction()}
 		if (impMods.indexOf("BeatusExtended") > -1) {this.Make_BeatusExtended()}
@@ -712,6 +744,14 @@ class cipher {
 		}
 	}
 	
+	Make_BaconExtended() {
+		this.vArr = [1,2,3,4,5,6,7,8,9,9,10,20,30,40,50,60,70,80,90,100,200,200,300,400,500,600]
+		this.vArr2 = [1,2,3,4,5,6,7,8,9,9,10,20,30,40,50,60,70,80,90,100,200,200,300,400,500,600]
+	}
+	Make_BaconRevExt() {
+		this.vArr = [1,2,3,4,5,5,6,7,8,9,10,20,30,40,50,60,70,70,80,90,100,200,300,400,500,600]
+		this.vArr2 = [1,2,3,4,5,5,6,7,8,9,10,20,30,40,50,60,70,70,80,90,100,200,300,400,500,600]
+	}
 	Make_CSSwitchCase() {
 		var tempArr = []
 		var tempArr2 = []
@@ -1028,14 +1068,6 @@ class cipher {
 		this.vArr = [27,28,29,30,31,32,33,34,35,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
 		this.vArr2 = [27,28,29,30,31,32,33,34,35,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
 	}
-	Make_IlluminatiNovice() {
-		this.vArr = [12,11,10,9,8,7,6,5,4,4,3,2,1,13,14,15,16,17,18,19,20,20,21,22,23,24]
-		this.vArr2 = [12,11,10,9,8,7,6,5,4,4,3,2,1,13,14,15,16,17,18,19,20,20,21,22,23,24]
-	}
-	Make_IlluminatiReverse() {
-		this.vArr = [12,11,10,9,8,8,7,6,5,4,3,2,1,13,14,15,16,16,17,18,19,20,21,22,23,24]
-		this.vArr2 = [12,11,10,9,8,8,7,6,5,4,3,2,1,13,14,15,16,16,17,18,19,20,21,22,23,24]
-	}
 	Make_BeatusOrdinal() {
 		this.vArr = [1,2,3,4,5,6,7,8,9,9,10,11,12,13,14,15,16,17,18,19,20,20,20,21,22,23]
 		this.vArr2 = [1,2,3,4,5,6,7,8,9,9,10,11,12,13,14,15,16,17,18,19,20,20,20,21,22,23]
@@ -1161,6 +1193,8 @@ function Build_Ciphers() {
 			case "R Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 238, 200, 104, "Reverse"); break;
 			case "Reverse Satanic": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 51, 51, "Reverse", "SatanicNum"); break;
 
+			case "Elizabethan Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "BaconExtended"); break;
+			case "Elizabethan R Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Reverse", "BaconRevExt"); break;
 			case "Elizabethan Simple": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "BaconSimple"); break;
 			case "Elizabethan Reverse": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0, "Reverse", "BaconReverse"); break;
 			case "Elizabethan Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 216, 209, "BaconShort"); break;
@@ -1170,8 +1204,10 @@ function Build_Ciphers() {
 			case "Elizabethan Alphanumeric": allCiphers[allCiphers.length] = new cipher(key, "ElizAQ", 227, 176, 114); break;
 			case "Elizabethan 360": allCiphers[allCiphers.length] = new cipher(key, "Eliz360", 251, 172, 0); break;
 
-			case "Illuminati Novice": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 255, 29, "IlluminatiNovice"); break;
-			case "Illuminati Reverse": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 189, 2, "Reverse", "IlluminatiReverse"); break;
+			case "Illuminati Novice": allCiphers[allCiphers.length] = new cipher(key, "Illuminati", 255, 255, 29); break;
+			case "Illuminati Reverse": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiRev", 255, 189, 2); break;
+			case "Illuminati Alt": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAlt", 211, 211, 13); break;
+			case "Illuminati Alt Rev": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAltRev", 211, 167, 40); break;
 
 			case "Agrippa Key": allCiphers[allCiphers.length] = new cipher(key, "Agrippa", 153, 102, 255, "Extend"); break;
 			case "Agrippa Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Agrippa", 154, 121, 227); break;
@@ -1203,7 +1239,7 @@ function Build_Ciphers() {
 			case "Ordinal starting at 2": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 2", 21, 187, 14); break;
 			case "Ordinal starting at 3": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 3", 40, 182, 24); break;    
 			case "Ordinal starting at 4": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 4", 59, 177, 34); break;   
-			case "Ordinal starting at 5": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 5", 78, 172, 44); break;
+			case "Angelic Gematria": allCiphers[allCiphers.length] = new cipher(key, "Angelic Gematria", 224, 176, 255); break;
 			case "Ordinal starting at 6": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 6", 97, 167, 54); break;
 			case "Ordinal starting at 7": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 7", 116, 162, 64); break;    
 			case "Ordinal starting at 8": allCiphers[allCiphers.length] = new cipher(key, "Ordinal Starting at 8", 135, 157, 74); break;   
@@ -1314,6 +1350,8 @@ function Set_Categories() {
 	cipherArray["R Extended Alternative"] = "Reverse"
 	cipherArray["Reverse Satanic"] = "Reverse"
 
+	cipherArray["Elizabethan Extended"] = "Elizabethan"
+	cipherArray["Elizabethan R Extended"] = "Elizabethan"
 	cipherArray["Elizabethan Simple"] = "Elizabethan"
 	cipherArray["Elizabethan Reverse"] = "Elizabethan"
 	cipherArray["Elizabethan Reduction"] = "Elizabethan"
@@ -1325,6 +1363,8 @@ function Set_Categories() {
 
 	cipherArray["Illuminati Novice"] = "Illuminati"
 	cipherArray["Illuminati Reverse"] = "Illuminati"
+	cipherArray["Illuminati Alt"] = "Illuminati"
+	cipherArray["Illuminati Alt Rev"] = "Illuminati"
 
 	cipherArray["Agrippa Key"] = "Latin-Italic"
 	cipherArray["Agrippa Ordinal"] = "Latin-Italic"	
@@ -1356,7 +1396,7 @@ function Set_Categories() {
 	cipherArray["Ordinal starting at 2"] = "Ordinal Custom"
 	cipherArray["Ordinal starting at 3"] = "Ordinal Custom"
    	cipherArray["Ordinal starting at 4"] = "Ordinal Custom"
-	cipherArray["Ordinal starting at 5"] = "Ordinal Custom"
+	cipherArray["Angelic Gematria"] = "Ordinal Custom"
 	cipherArray["Ordinal starting at 6"] = "Ordinal Custom"
 	cipherArray["Ordinal starting at 7"] = "Ordinal Custom"
 	cipherArray["Ordinal starting at 8"] = "Ordinal Custom"
