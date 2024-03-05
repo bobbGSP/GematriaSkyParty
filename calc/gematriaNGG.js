@@ -96,6 +96,22 @@ class cipher {
 				this.vArr2 = [1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,16,17,18,19,20,21,22,23,24]
 				}
 				break;
+			case "IlluminatiAlt2":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [109,108,107,106,105,104,103,102,101,100,99,98,97,122,121,120,119,118,117,116,115,114,113,112,111,110]
+				this.cArr2 = [77,76,75,74,73,72,71,70,69,68,67,66,65,90,89,88,87,86,85,84,83,82,81,80,79,78]
+				this.vArr = [1,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,16,17,17,18,19,20,21,22,23,24]
+				this.vArr2 = [1,2,3,4,4,5,6,7,8,9,10,11,12,13,14,15,16,17,17,18,19,20,21,22,23,24]
+				}
+				break;
+			case "IlluminatiAlt2Rev":
+				for (y = 0; y < 26; y++) {
+				this.cArr = [110,111,112,113,114,115,116,117,118,119,120,121,122,97,98,99,100,101,102,103,104,105,106,107,108,109]
+				this.cArr2 = [78,79,80,81,82,83,84,85,86,87,88,89,90,65,66,67,68,69,70,71,72,73,74,75,76,77]
+				this.vArr = [1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22,23,24]
+				this.vArr2 = [1,2,3,4,5,6,7,8,8,9,10,11,12,13,14,15,16,17,18,19,20,21,21,22,23,24]
+				}
+				break;
 			case "Agrippa":
 				this.cArr = [97, 98, 99, 100, 101, 102, 103, 104, 105, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 120, 121, 122, 106, 118, 10680, 119]
 				this.cArr2 = [65, 66, 67, 68, 69, 70, 71, 72, 73, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 88, 89, 90, 74, 86, 10680, 87]
@@ -1193,8 +1209,8 @@ function Build_Ciphers() {
 			case "R Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 238, 200, 104, "Reverse"); break;
 			case "Reverse Satanic": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 51, 51, "Reverse", "SatanicNum"); break;
 
-			case "Elizabethan Standard": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "BaconExtended"); break;
-			case "Elizabethan R Standard": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Reverse", "BaconRevExt"); break;
+			case "Elizabethan Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "BaconExtended"); break;
+			case "Elizabethan R Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Reverse", "BaconRevExt"); break;
 			case "Elizabethan Simple": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "BaconSimple"); break;
 			case "Elizabethan Reverse": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0, "Reverse", "BaconReverse"); break;
 			case "Elizabethan Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 216, 209, "BaconShort"); break;
@@ -1206,8 +1222,10 @@ function Build_Ciphers() {
 
 			case "Illuminati Novice": allCiphers[allCiphers.length] = new cipher(key, "Illuminati", 255, 255, 29); break;
 			case "Illuminati Reverse": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiRev", 255, 189, 2); break;
-			case "Illuminati Alt": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAlt", 211, 211, 13); break;
-			case "Illuminati Alt Rev": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAltRev", 211, 167, 40); break;
+			case "Illuminati Alt": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAlt", 233, 233, 40); break;
+			case "Illuminati Alt Rev": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAltRev", 233, 167, 13); break;
+			case "Illuminati Alt2": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAlt2", 211, 211, 51); break;
+			case "Illuminati Alt2 Rev": allCiphers[allCiphers.length] = new cipher(key, "IlluminatiAlt2Rev", 211, 145, 24); break;
 
 			case "Agrippa Key": allCiphers[allCiphers.length] = new cipher(key, "Agrippa", 153, 102, 255, "Extend"); break;
 			case "Agrippa Ordinal": allCiphers[allCiphers.length] = new cipher(key, "Agrippa", 154, 121, 227); break;
@@ -1350,8 +1368,8 @@ function Set_Categories() {
 	cipherArray["R Extended Alternative"] = "Reverse"
 	cipherArray["Reverse Satanic"] = "Reverse"
 
-	cipherArray["Elizabethan Standard"] = "Elizabethan"
-	cipherArray["Elizabethan R Standard"] = "Elizabethan"
+	cipherArray["Elizabethan Extended"] = "Elizabethan"
+	cipherArray["Elizabethan R Extended"] = "Elizabethan"
 	cipherArray["Elizabethan Simple"] = "Elizabethan"
 	cipherArray["Elizabethan Reverse"] = "Elizabethan"
 	cipherArray["Elizabethan Reduction"] = "Elizabethan"
@@ -1365,6 +1383,8 @@ function Set_Categories() {
 	cipherArray["Illuminati Reverse"] = "Illuminati"
 	cipherArray["Illuminati Alt"] = "Illuminati"
 	cipherArray["Illuminati Alt Rev"] = "Illuminati"
+	cipherArray["Illuminati Alt2"] = "Illuminati"
+	cipherArray["Illuminati Alt2 Rev"] = "Illuminati"
 
 	cipherArray["Agrippa Key"] = "Latin-Italic"
 	cipherArray["Agrippa Ordinal"] = "Latin-Italic"	
