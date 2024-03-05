@@ -1193,8 +1193,8 @@ function Build_Ciphers() {
 			case "R Extended Alternative": allCiphers[allCiphers.length] = new cipher(key, "ExtendAlt", 238, 200, 104, "Reverse"); break;
 			case "Reverse Satanic": allCiphers[allCiphers.length] = new cipher(key, "English", 255, 51, 51, "Reverse", "SatanicNum"); break;
 
-			case "Elizabethan Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "BaconExtended"); break;
-			case "Elizabethan R Extended": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Reverse", "BaconRevExt"); break;
+			case "Elizabethan Standard": allCiphers[allCiphers.length] = new cipher(key, "English", 253, 255, 119, "BaconExtended"); break;
+			case "Elizabethan R Standard": allCiphers[allCiphers.length] = new cipher(key, "English", 218, 226, 0, "Reverse", "BaconRevExt"); break;
 			case "Elizabethan Simple": allCiphers[allCiphers.length] = new cipher(key, "English", 80, 235, 21, "BaconSimple"); break;
 			case "Elizabethan Reverse": allCiphers[allCiphers.length] = new cipher(key, "English", 0, 186, 0, "Reverse", "BaconReverse"); break;
 			case "Elizabethan Reduction": allCiphers[allCiphers.length] = new cipher(key, "English", 100, 216, 209, "BaconShort"); break;
@@ -1350,8 +1350,8 @@ function Set_Categories() {
 	cipherArray["R Extended Alternative"] = "Reverse"
 	cipherArray["Reverse Satanic"] = "Reverse"
 
-	cipherArray["Elizabethan Extended"] = "Elizabethan"
-	cipherArray["Elizabethan R Extended"] = "Elizabethan"
+	cipherArray["Elizabethan Standard"] = "Elizabethan"
+	cipherArray["Elizabethan R Standard"] = "Elizabethan"
 	cipherArray["Elizabethan Simple"] = "Elizabethan"
 	cipherArray["Elizabethan Reverse"] = "Elizabethan"
 	cipherArray["Elizabethan Reduction"] = "Elizabethan"
