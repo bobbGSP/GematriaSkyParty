@@ -250,6 +250,14 @@ class cipher {
 		      		this.vArr = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025,121393]
 				this.vArr2 = [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025,121393]
 				break;
+			case "Composite":
+				for (y = 0; y < 26; y++) {
+					this.cArr[y] = (y + 97)
+					this.cArr2[y] = (y + 65)
+				}
+				this.vArr = [4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 32, 33, 34, 35, 36, 38, 39]
+				this.vArr2 = [4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 32, 33, 34, 35, 36, 38, 39]
+				break;
 			case "NonPrime":
 				for (y = 0; y < 26; y++) {
 					this.cArr[y] = (y + 97)
@@ -1294,6 +1302,7 @@ function Build_Ciphers() {
 			case "Reverse Trigonal": allCiphers[allCiphers.length] = new cipher(key, "English", 238, 191, 112, "Reverse", "TriangleNum"); break;
 			case "Reverse Squares": allCiphers[allCiphers.length] = new cipher(key, "English", 240, 225, 112, "Reverse", "SquareNum"); break;
 			case "Reverse Pentagonal": allCiphers[allCiphers.length] = new cipher(key, "Pentagonal", 245, 200, 130,"Reverse"); break;
+			case "Composite Numbers": allCiphers[allCiphers.length] = new cipher(key, "Composite", 244, 66, 125); break;
 			case "Non-Primes": allCiphers[allCiphers.length] = new cipher(key, "NonPrime", 125, 66, 244); break;
 			case "Reverse Non-Primes": allCiphers[allCiphers.length] = new cipher(key, "NonPrime", 125, 100, 244,"Reverse"); break;
 			case "Tesla Numbers 369": allCiphers[allCiphers.length] = new cipher(key, "Tesla369", 29, 171, 29); break;
@@ -1453,6 +1462,7 @@ function Set_Categories() {
 	cipherArray["Reverse Trigonal"] = "Mathematical"
 	cipherArray["Reverse Squares"] = "Mathematical"
 	cipherArray["Reverse Pentagonal"] = "Mathematical"
+	cipherArray["Composite Numbers"] = "Mathematical"
 	cipherArray["Non-Primes"] = "Mathematical"
 	cipherArray["Reverse Non-Primes"] = "Mathematical"
 	cipherArray["Tesla Numbers 369"] = "Mathematical"
