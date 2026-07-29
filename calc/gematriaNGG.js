@@ -1361,6 +1361,7 @@ function Set_Categories() {
 
 	cipherArray["English Ordinal"] = "English"
 	cipherArray["Full Reduction"] = "English"
+	cipherArray["Alphanumeric Qabbala"] = "English"
 	cipherArray["Single Reduction"] = "English"
 	cipherArray["Full Reduction KV"] = "English"
 	cipherArray["Single Reduction KV"] = "English"
@@ -1414,7 +1415,6 @@ function Set_Categories() {
 	cipherArray["Prime Qabalah"] = "Thelemic"
 	cipherArray["William G. Gray"] = "Thelemic"
 
-	cipherArray["Alphanumeric Qabbala"] = "Alphanumeric"
 	cipherArray["Alphanumeric Primes"] = "Alphanumeric"
 	cipherArray["Alphanumeric Trigonal"] = "Alphanumeric"
 	cipherArray["Alphanumeric Squares"] = "Alphanumeric"
